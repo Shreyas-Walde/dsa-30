@@ -18,13 +18,13 @@ def merge_sort(arr):
     L = merge_sort(L)
     R = merge_sort(R)
 
-    l,r = 0,0  # # Pointers for L and R
-    L_len = len(L)
-    R_len = len(R)
+    l,r = 0,0  # # Pointers for L and R           [-5, 3, 2, 1], [-3, -3, 7, 2, 2]
+    L_len = len(L)   # 4
+    R_len = len(R)   # 5
 
     sorted_arr = [0] * n    # hash?  0(n)
     
-# Merge    
+# Merge--------------------------------------------------------    
     i = 0
 #         0 < 3         0 < 2
     while l < L_len and r < R_len:
